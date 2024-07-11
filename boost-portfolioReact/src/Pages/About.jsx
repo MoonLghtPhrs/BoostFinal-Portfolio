@@ -1,55 +1,7 @@
 
 const AboutMe = () => {
     return (
-        <div className="Container">
-        <header> 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Portfolio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="../index.html">Home</a>
-      </li>
-
-      {/* <!-- About me dropdown--> */}
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="./About/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About
-            </a>
-      <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./About/about.html">About Me</a></li>
-          <li><a class="dropdown-item" href="./blog.html">Resume</a></li>
-      </ul>
-      </li>
-
-      {/* <!-- Bootcamp dropdown--> */}
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="./Bootcamp/bootcamp.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Bootcamp
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./Bootcamp/mentors.html">Mentors</a></li>
-          <li><a class="dropdown-item" href="./Bootcamp/projectList.html">Projects</a></li>
-          <li><a class="dropdown-item" href="./Bootcamp/scores.html">Weekly Score</a></li>
-          <li><a class="dropdown-item" href="#">Feedback</a></li>
-        </ul>
-      </li>
-
-      {/* <!--Other section --> */}
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Coming soon</a>
-      </li>
-    </ul>
-  </div>
-</div>
-      </nav>
-  </header>
-
-
+  
 
 
 <div class="page-container">
