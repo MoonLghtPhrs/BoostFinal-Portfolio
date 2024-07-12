@@ -1,13 +1,14 @@
 import React from "react"
-import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container} from "react-bootstrap"
+import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container, ListGroup, ListGroupItem} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css";
+import shockedpika from "../assets/meme-pikachu.gif"
 
 const Bootcamp = () => {
     return (
       <Container style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)' }} fluid>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
-          <Col sm={3}>
+          <Col xl={1}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
                 <Nav.Link style={{borderRadius:'3px',borderColor: 'hsla(0,0%,100%, .15)' }} eventKey="first">Boot Camp</Nav.Link>
@@ -33,28 +34,41 @@ const Bootcamp = () => {
               </Tab.Pane>
               <Tab.Pane eventKey="second">
                 <h4>Projects</h4>
-                <Card style={{ width: '18rem', marginBottom: '1rem' }}>
-                  <Card.Img variant="top" src="https://via.placeholder.com/150" />
-                  <Card.Body>
-                    <Card.Title>Project Title</Card.Title>
-                    <Card.Text>
-                      This is a brief summary of the project. It showcases the main objectives, technologies used, and the outcome.
-                    </Card.Text>
-                    <Button variant="primary" href="https://github.com" target="_blank">View Code on Git</Button>
-                    <Button variant="secondary" style={{ marginLeft: '10px' }}>Read Project Write-Up</Button>
-                  </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem', marginBottom: '1rem' }}>
-                  <Card.Img variant="top" src="https://via.placeholder.com/150" />
-                  <Card.Body>
-                    <Card.Title>Another Project</Card.Title>
-                    <Card.Text>
-                      This is a brief summary of another project. It includes details on the approach, technologies, and results.
-                    </Card.Text>
-                    <Button variant="primary" href="https://github.com" target="_blank">View Code on Git</Button>
-                    <Button variant="secondary" style={{ marginLeft: '10px' }}>Read Project Write-Up</Button>
-                  </Card.Body>
-                </Card>
+                <p> Here are a few things I have worked on </p>
+                    <div className="cardContainerProject">
+
+                    <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+      {Array.from({ length: 12 }).map((_, idx) => (
+        <Col key={idx}>
+          <Card style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', borderRadius: '3px' }}>
+          <Card.Title>Project Name</Card.Title>
+          <Card.Img variant="top" src={shockedpika} />
+            <Card.Body>
+              <Card.Text>
+                This is where I would type up a 2 to 3 sentence summary on the project. But I haven't decided if I want to make a list of cards and hardcode it into vs code.
+                OR, if I want to go through the hastle of creating an entire backend data base, which only sounds worse and gross.
+                So i'll probably just write ou t the cards themselves. Hope you like the content. 
+
+                <hr/>
+                <Card.Text>Technology used</Card.Text>
+                <ListGroup style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', borderRadius: '3px' }} variant="flush">
+        <ListGroup.Item>Javascript</ListGroup.Item>
+        <ListGroup.Item>React</ListGroup.Item>
+        <ListGroup.Item>3am Tears</ListGroup.Item>
+      </ListGroup>
+                <Button href=""> View On Github</Button>
+                {/* Add an onclick to open up a modal popup / open to another page, whichever you desire really */}
+                <Button> Click to view project write up</Button> 
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+
+
+                    </div>
+
               </Tab.Pane>
               <Tab.Pane eventKey="third">
                 <h4>Weekly Scores</h4>
