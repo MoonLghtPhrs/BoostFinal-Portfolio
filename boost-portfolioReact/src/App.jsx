@@ -15,8 +15,9 @@ function App() {
   return (
     <>
     <p>Please jsut load</p>
-    <Header/>
+   
    <BrowserRouter>
+   <Header/>
    <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<AboutMe/>} />
@@ -25,7 +26,7 @@ function App() {
     <Route path="/resume-download" element={<Resume/>} />
     </Routes>
     </BrowserRouter>
-      <Bootcamp/>
+    
      <Footer/>
     </>
   )

@@ -2,21 +2,23 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import { NavbarBrand, NavbarToggle } from 'react-bootstrap';
+import { NavbarBrand, NavbarToggle, ThemeProvider } from 'react-bootstrap';
 import  { Link } from "react-router-dom";
-
+import NavMenuList from './NavMenuList';
 function Header() {
     return (
      
     <header>
 
-<Navbar expand="lg" className='bg-body-tertiary'>
+<Navbar expand="md" className='bg-body-tertiary'>
 <Container>
-<NavbarBrand href="/"> Portfolio </NavbarBrand>
+<Navbar.Brand href="/"> Portfolio </Navbar.Brand>
 <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-
-          <Navbar/>
+        <Nav>
+          
+        </Nav>
+          <NavMenuList/>
         </Navbar.Collapse>
       
 
@@ -24,6 +26,7 @@ function Header() {
 </Container>
 
       </Navbar>
+     
     </header>
         
     );

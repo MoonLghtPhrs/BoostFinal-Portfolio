@@ -1,4 +1,6 @@
+import React from "react"
 import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container} from "react-bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Bootcamp = () => {
     return (
