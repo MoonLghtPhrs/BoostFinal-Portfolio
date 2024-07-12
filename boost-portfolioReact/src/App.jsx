@@ -14,8 +14,6 @@ function App() {
 
   return (
     <>
-    <p>Please jsut load</p>
-   
    <BrowserRouter>
    <Header/>
    <Routes>

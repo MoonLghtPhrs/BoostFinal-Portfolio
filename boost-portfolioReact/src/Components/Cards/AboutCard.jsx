@@ -6,7 +6,7 @@ const AboutCards = () => {
     return (
 
 
-<CardSample/>
+
 <Container fluid>
 
 <Row>

@@ -1,7 +1,7 @@
 const Footer  = () => {
     return (
         <div classname="container"> 
-        Whats up sluts this is a footer element
+        An Actual footer this time. Copyright reserved or something??
         </div>
     )
 }

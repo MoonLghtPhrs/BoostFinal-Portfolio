@@ -1,8 +1,15 @@
 import {Col, Row, Container, Tab, Tabs, Image } from "react-bootstrap"
+import CardSample from "../Components/Cards/profileCardSample";
+import fuuchanpic from "../assets/1720397083360511.gif"
+import seiraBG from "../assets/ffxiv_11192022_130910_344-2.png"
 const AboutMe = () => {
     return (
       <>
-      <Container fluid>
+      
+      <Container fluid
+      style={{
+        backgroundImage: {seiraBG}
+      }}>
         <Row>
           <Col><div className="miniHeader">
             <h2>Come in, do you read me?</h2>
@@ -15,8 +22,8 @@ const AboutMe = () => {
 <div className="sidebar">
 
 <div className="imgContainer">
-  <Image src="boost-portfolioReact\src\assets\1720397083360511.gif" alt="fuuchan" rounded fluid/>
-  <img src="./assets/1720397083360511.gif"></img>
+  <Image src={fuuchanpic} alt="fuuchan" rounded fluid/>
+  
 </div>
 <div> You will succeed. It is inevitable. Happiness is coming.</div>
 <h5>Hi, It's Vai! </h5>
