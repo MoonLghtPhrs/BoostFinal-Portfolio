@@ -1,3 +1,5 @@
+import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container} from "react-bootstrap"
+
 const Bootcamp = () => {
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">

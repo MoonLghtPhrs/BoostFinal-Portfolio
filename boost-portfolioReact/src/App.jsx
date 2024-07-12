@@ -1,8 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import WelcomeBanner from './Components/Welcome/Banner'
 import AboutMe from './Pages/About'
 import Home from './Pages/Home'
 import Bootcamp from './Pages/Bootcamp'
@@ -11,12 +7,15 @@ import Resume from './Pages/Resume'
 import { Button } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
+import Header from './Components/Header/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
+    <p>Please jsut load</p>
+    <Header/>
    <BrowserRouter>
    <Routes>
     <Route path="/" element={<Home/>} />
@@ -26,7 +25,7 @@ function App() {
     <Route path="/resume-download" element={<Resume/>} />
     </Routes>
     </BrowserRouter>
-      
+      <Bootcamp/>
      <Footer/>
     </>
   )
