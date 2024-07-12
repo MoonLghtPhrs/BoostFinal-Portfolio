@@ -1,3 +1,5 @@
+
+
 const ProjectList = () => {
     return (
 <div>
@@ -5,6 +7,7 @@ const ProjectList = () => {
 <div class="container">
       <h1>All projects</h1>
 
+<
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">

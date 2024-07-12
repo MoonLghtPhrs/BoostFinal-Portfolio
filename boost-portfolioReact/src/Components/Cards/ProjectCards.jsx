@@ -1,6 +1,6 @@
 import { CardBody, CardFooter, CardHeader, Card, Button, CardText, CardImg } from "react-bootstrap"
 
-const ProjectCard = () => {
+const ProjectCard = ({}) => {
     return (
         <Card>
             <CardImg variant="top" src="#" alt="This is a placeholder"></CardImg>
