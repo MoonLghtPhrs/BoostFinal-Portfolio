@@ -1,4 +1,5 @@
 import React from "react";
+import {  Button} from "react-bootstrap";
 
 const Resume = () => {
     return (
@@ -6,9 +7,10 @@ const Resume = () => {
  <div class="container py-4 px-3 mx-auto">
       <h1>Work History</h1>
       <p> Click here to download an ATS friendly pdf version of the resume.</p>
-      <button class="btn btn-info"> Resume pdf</button>
+      <Button class="btn btn-info"> Download Resume PDF</Button> 
+      <Button>View on Linked in</Button>
     
-      <div>    space</div>
+      
         <h2>Work Expirence</h2>
       <div class="accordion" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
@@ -19,7 +21,6 @@ const Resume = () => {
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
             <p>Led the initiative to review and roll out new product functionality to 500 of our highest visibility clients. 
               Project resulted in rollout of new functionality to 1,234 clients, doubling the initial goal.
               The process required creating eligibility criteria for these top client

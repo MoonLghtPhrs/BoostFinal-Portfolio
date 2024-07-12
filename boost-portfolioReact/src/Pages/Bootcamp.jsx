@@ -22,6 +22,9 @@ const Bootcamp = () => {
               <Nav.Item>
                 <Nav.Link eventKey="fourth">Program Feedback</Nav.Link>
               </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="fourth">My Mentors</Nav.Link>
+              </Nav.Item>
             </Nav>
           </Col>
           <Col sm={9}>

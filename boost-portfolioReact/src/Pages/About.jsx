@@ -56,22 +56,25 @@ const AboutMe = () => {
 <Col>
 {/* Right Column */}
 
-<p> Hello! I am an illustrator, a designer, a streamer and now a fullstack engineer. I grew up on a computer so it is only natural that I eventually began to develop software. I got my start on the old bastions of the internet (MySpace and Gaia.com) don't really basic front end tweeks. I've made all of the front end mistakes that are physically possible. Like yellow text on a red background. Look at me now! This entire website was coded by hand using bootstrap and vanilla HtML,CSS and Javascript elements. Isn't that neat? </p>
+<p> Hello! I am an illustrator, a designer, a streamer and now a fullstack engineer. I grew up on a computer so it is only natural that I eventually began to develop software. I got my start on the old bastions of the internet (MySpace and gaia). I've made all of the front end mistakes that are physically possible. Like yellow text on a red background. Look at me now! This entire website was coded by hand using bootstrap and vanilla HtML,CSS and Javascript elements. Isn't that neat? </p>
 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ipsum magni, quidem totam inventore id, sunt, exercitationem similique vel quo repellat ea ipsam animi nihil fugiat quaerat aperiam harum maxime.</p>
 
 <h3>My tech skills</h3>
 
-<ul>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>Sed do eiusmod tempor</li>
-  <li>Incididunt ut labore et dolore</li>
-  <li>Magna aliqua ut enim ad minim</li>
-  <li>Veniam, quis nostrud exercitation</li>
-</ul>
-
+<div>
+  Lorem ipsum dolor sit amet
+  Consectetur adipiscing elit
+  Sed do eiusmod tempor
+  Incididunt ut labore et dolore
+  Magna aliqua ut enim ad minim
+  Veniam, quis nostrud exercitation
+</div>
 </Col>
 </Row>
+
+<Col>
+<Row><h3>Contact me</h3></Row>
+</Col>
       </Container>
 </>
 
