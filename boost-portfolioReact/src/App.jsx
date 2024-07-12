@@ -8,6 +8,7 @@ import { Button } from 'react-bootstrap'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
+import './App.css'
 
 function App() {
  

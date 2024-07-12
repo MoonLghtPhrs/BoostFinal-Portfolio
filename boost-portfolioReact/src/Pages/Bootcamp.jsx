@@ -4,12 +4,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Bootcamp = () => {
     return (
+      <Container style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)' }} fluid>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>
-                <Nav.Link eventKey="first">Boot Camp</Nav.Link>
+                <Nav.Link style={{borderRadius:'3px',borderColor: 'hsla(0,0%,100%, .15)' }} eventKey="first">Boot Camp</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="second">Projects</Nav.Link>
@@ -121,6 +122,7 @@ const Bootcamp = () => {
           </Col>
         </Row>
       </Tab.Container>
+      </Container>
     );
   };
   
