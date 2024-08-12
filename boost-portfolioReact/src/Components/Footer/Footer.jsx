@@ -1,6 +1,6 @@
 const Footer  = () => {
     return (
-        <div classname="container"> 
+        <div className="container"> 
         An Actual footer this time. Copyright reserved or something??
         </div>
     )

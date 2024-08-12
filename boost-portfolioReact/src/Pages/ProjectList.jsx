@@ -10,18 +10,31 @@ const ProjectList = () => {
                 <p> Here are a few things I have worked on </p>
                     <div className="cardContainerProject">
 
-                    <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+                    <Row xs={1} md={2} lg={3} className="g-4">
       {Array.from({ length: 12 }).map((_, idx) => (
         <Col key={idx}>
-          <Card >
+          <Card style={{
+            maxWidth: "400px",
+            maxHeight: "auto"
+          }}>
           <Card.Title>Project Name</Card.Title>
-          <Card.Img variant="top" src={shockedpika} />
+          
             <Card.Body>
-              <Card.Text>
+              <Row>
+
+                <Col>  <Card.Img variant="top" src={shockedpika} />
+                </Col>
+
+                <Col>
+                <Card.Text>
                 This is where I would type up a 2 to 3 sentence summary on the project. But I haven't decided if I want to make a list of cards and hardcode it into vs code.
                 OR, if I want to go through the hastle of creating an entire backend data base, which only sounds worse and gross.
                 So i'll probably just write ou t the cards themselves. Hope you like the content. 
-
+                </Card.Text>
+                </Col>
+              </Row>
+           
+              
                 <hr/>
                 <Card.Text>Technology used</Card.Text>
                 <ListGroup variant="flush">
@@ -29,10 +42,15 @@ const ProjectList = () => {
         <ListGroup.Item>React</ListGroup.Item>
         <ListGroup.Item>3am Tears</ListGroup.Item>
       </ListGroup>
-                <Button href=""> View On Github</Button>
-                {/* Add an onclick to open up a modal popup / open to another page, whichever you desire really */}
-                <Button> Click to view project write up</Button> 
-              </Card.Text>
+      <Row>
+  {/* Add an onclick to open up a modal popup / open to another page, whichever you desire really */}
+        <Col> <Button href=""> View On Github</Button></Col>
+        <Col><Button> Read More</Button> </Col>
+      </Row>
+               
+              
+                
+             
             </Card.Body>
           </Card>
         </Col>
