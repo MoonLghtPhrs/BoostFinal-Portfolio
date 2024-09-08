@@ -1,5 +1,5 @@
-import React from "react"
-import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container, ListGroup, ListGroupItem} from "react-bootstrap"
+import React, { useState, useEffect} from "react"
+import {Tab, Tabs, Row, Col, Nav, Card, CardImg, Button, Table, Container, ListGroup, ListGroupItem,} from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css";
 import shockedpika from "../assets/meme-pikachu.gif"
 
@@ -13,7 +13,7 @@ return (
 
 
 
-<Container style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', maxHeight: "100%", maxWidth: "95%" }} fluid>
+<Container style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', minHeight: "750px", maxWidth: "95%" }} fluid>
 
 
 <Tabs 
@@ -21,6 +21,7 @@ return (
   activeKey={key}
   onSelect={(k) => setKey(k)}
   className="mb-3"
+
 >
 
 <Tab eventKey="bootcamp" title="BootCamp Summary">
@@ -70,113 +71,7 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
       </Tab>
 
       <Tab eventKey="WeeklyScores" title="Weekly Scores">
-        
-      </Tab>
-
-      <Tab eventKey="Mentors" title="Mentors">
-        Tab content for Profile
-      </Tab>
-
-      <Tab eventKey="feedback" title="ProgramFeedback">
-        Tab content for Profile
-      </Tab>
-
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
-      </Tab>
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
-      </Tab>
-
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
-      </Tab>
-
-</Tabs>
-
-
-
-
-
-
-
-
-
-
-
-    
-      <Tab.Container id="left-tabs-example" defaultActiveKey="first"
-      style={{
-        
-      }}>
-      <Row>
-        <Col xl={1}>
-          <Nav variant="pills" className="flex-column">
-            <Nav.Item>
-              <Nav.Link style={{borderRadius:'3px',borderColor: 'hsla(0,0%,100%, .15)' }} eventKey="first">Boot Camp</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="second">Projects</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="third">Weekly Scores</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="fourth">Program Feedback</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="fourth">My Mentors</Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Col>
-        <Col sm={9}>
-          <Tab.Content>
-            <Tab.Pane eventKey="first">
-              <h4>Boot Camp Experience</h4>
-              <p>
-                Attending a coding boot camp is an intensive and immersive experience. It often includes long hours, challenging projects, and constant learning. Participants gain practical skills in programming, software development, and problem-solving. The experience is designed to be transformative, equipping individuals with the necessary tools to start a career in tech.
-              </p>
-            </Tab.Pane>
-            <Tab.Pane eventKey="second">
-              <h4>Projects</h4>
-              <p> Here are a few things I have worked on </p>
-                  <div className="cardContainerProject">
-
-                  <Row xs={1} md={2} lg={3} xl={4} className="g-4">
-    {Array.from({ length: 12 }).map((_, idx) => (
-      <Col key={idx}>
-        <Card style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', borderRadius: '3px' }}>
-        <Card.Title>Project Name</Card.Title>
-        <Card.Img variant="top" src={shockedpika} />
-          <Card.Body>
-            <Card.Text>
-              This is where I would type up a 2 to 3 sentence summary on the project. But I haven't decided if I want to make a list of cards and hardcode it into vs code.
-              OR, if I want to go through the hastle of creating an entire backend data base, which only sounds worse and gross.
-              So i'll probably just write ou t the cards themselves. Hope you like the content. 
-
-              <hr/>
-              <Card.Text>Technology used</Card.Text>
-              <ListGroup style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', borderRadius: '3px' }} variant="flush">
-      <ListGroup.Item>Javascript</ListGroup.Item>
-      <ListGroup.Item>React</ListGroup.Item>
-      <ListGroup.Item>3am Tears</ListGroup.Item>
-    </ListGroup>
-              <Button href=""> View On Github</Button>
-              {/* Add an onclick to open up a modal popup / open to another page, whichever you desire really */}
-              <Button> Click to view project write up</Button> 
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </Col>
-    ))}
-  </Row>
-
-
-                  </div>
-
-            </Tab.Pane>
-            <Tab.Pane eventKey="third">
-              <h4>Weekly Scores</h4>
+      <h4>Weekly Scores</h4>
               <Table striped bordered hover>
                 <thead>
                   <tr>
@@ -203,9 +98,16 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
                   </tr>
                 </tbody>
               </Table>
-            </Tab.Pane>
-            <Tab.Pane eventKey="fourth">
-              <h4>Program Feedback</h4>
+        
+      </Tab>
+
+      <Tab eventKey="Mentors" title="Mentors">
+        Tab content for Profile
+      </Tab>
+
+      <Tab eventKey="feedback" title="ProgramFeedback">
+        Tab content for Profile
+        <h4>Program Feedback</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi scelerisque nisi, eu ullamcorper nisl nunc eu nisi. Duis ac tortor quis tortor ornare bibendum. Curabitur ut ullamcorper libero. Vivamus ac vestibulum nunc, eu suscipit lorem. Mauris convallis sapien eget augue dignissim, sed malesuada tortor volutpat.
               </p>
@@ -236,22 +138,21 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
           
 
 
-            </Tab.Pane>
-            <Tab.Pane eventKey="fifth">
-              <h2>Sample Code</h2>
+      </Tab>
 
+      <Tab eventKey="profile" title="Profile">
+        Tab content for Profile
+      </Tab>
+      <Tab eventKey="profile" title="Profile">
+        Tab content for Profile
+      </Tab>
 
+      <Tab eventKey="profile" title="Profile">
+        Tab content for Profile
+      </Tab>
 
-            </Tab.Pane>
+</Tabs>
 
-            <Tab.Pane eventKey="6th example">
-
-
-            </Tab.Pane>
-          </Tab.Content>
-        </Col>
-      </Row>
-    </Tab.Container>
     </Container>
   );
 };

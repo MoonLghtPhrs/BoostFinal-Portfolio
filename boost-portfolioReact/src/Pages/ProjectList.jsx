@@ -14,13 +14,22 @@ const ProjectList = () => {
       {Array.from({ length: 12 }).map((_, idx) => (
         <Col key={idx}>
           <Card style={{
-            maxWidth: "400px",
-            maxHeight: "auto"
+            maxWidth: "650px",
+            maxHeight: "auto",
+            border: "3px solid", 
+            boxShadow: "10px 10px 2px 3px rgba(4, 42, 87, 0.25)"
           }}>
-          <Card.Title>Project Name</Card.Title>
+          <Card.Title
+          style={{border: "1px solid",
+            padding: "12px", 
+            textAlign: "center"
+          }}
+          >Project Name</Card.Title>
           
-            <Card.Body>
-              <Row>
+            <Card.Body
+            style={{padding: "50px",}}
+            >
+              <Row  style={{border: "1px solid",}}>
 
                 <Col>  <Card.Img variant="top" src={shockedpika} />
                 </Col>

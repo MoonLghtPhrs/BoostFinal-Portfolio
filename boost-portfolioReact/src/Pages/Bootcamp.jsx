@@ -10,8 +10,8 @@ const Bootcamp = () => {
    <Container fluid>
     <Row> 
       <Col></Col>
-      <Col><div className="qotebanner" style={{position: "relative", borderRadius:"40px", maxHeight: "300px",
-        minHeight: "150px",
+      <Col><div className="qotebanner" style={{position: "relative", borderRadius:"40px", border: "5px solid",  maxHeight: "300px",
+        minHeight: "50px",
         maxWidth: "auto"}}> Qoute Banner</div></Col>
       <Col></Col>
 
