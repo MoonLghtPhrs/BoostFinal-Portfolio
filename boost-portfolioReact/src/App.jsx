@@ -9,6 +9,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import './App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 function App() {
  

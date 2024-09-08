@@ -1,14 +1,25 @@
 import React from "react";
-import {  Button} from "react-bootstrap";
+import {Button, Col, Row, Tabs, Container, Card} from "react-bootstrap";
 
 const Resume = () => {
     return (
         <div>
  <div class="container py-4 px-3 mx-auto">
-      <h1>Work History</h1>
+
+  <Row>
+<Col>
+<h1>Work History</h1>
       <p> Click here to download an ATS friendly pdf version of the resume.</p>
       <Button class="btn btn-info"> Download Resume PDF</Button> 
       <Button>View on Linked in</Button>
+</Col>
+
+<Col>
+</Col>
+
+
+  </Row>
+     
     
       
         <h2>Work Expirence</h2>

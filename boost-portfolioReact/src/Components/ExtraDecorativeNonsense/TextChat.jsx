@@ -40,6 +40,7 @@ const TextChat = () => {
 					height: "272px",
 					overflow: "hidden",
 					fontSize: "22px",
+					border: "5px solid red",
 				}}
 			>
 				<div
@@ -51,6 +52,8 @@ const TextChat = () => {
 						width: " 1188px",
 						height: "342px",
 						overflow: "hidden",
+						border: "5px solid red",
+
 					}}
 				>
 					{" "}
@@ -59,15 +62,14 @@ const TextChat = () => {
 						className="{styles.dialogboxIcon}"
 						style={{
 							// position: "absolute",
-							top: "83px",
-							left: "0px",
 							borderRadius: " 0px 183.61px 183.61px 0px",
 							backgroundColor: " rgba(218, 235, 246, 0.75)",
-							border: "4.6px solid #9dcae9",
+							border: "4px solid #9dcae9",
 							boxSizing: "border-box",
 							width: "1188px",
 							height: "215px",
 							overflow: "hidden",
+							
 						}}
 						alt=""
 						src=""
@@ -76,8 +78,7 @@ const TextChat = () => {
 						className="{styles.namePlate}"
 						style={{
 							// position: "absolute",
-							top: "53.66px",
-							left: "39.03px",
+
 							borderRadius: "50.01px",
 							backgroundColor: " #9dcae9",
 							border: " 6.1px solid #9dcae9",
@@ -86,6 +87,7 @@ const TextChat = () => {
 							width: "399.1px",
 							height: " 60.4px",
 							overflow: "hidden",
+							border: "5px solid red",
 						}}
 					>
 						{" "}
@@ -100,8 +102,6 @@ const TextChat = () => {
 							className="nameGoesHere"
 							style={{
 								// position: "absolute",
-								top: "16.77px",
-								left: "62.6px",
 							}}
 						>
 							Name Goes Here

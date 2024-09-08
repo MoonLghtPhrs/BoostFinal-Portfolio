@@ -5,7 +5,7 @@ import shockedpika from "../assets/meme-pikachu.gif"
 
 const BootCampTabs = () => {
 
-    const [key, setKey] = useState('home');
+    const [key, setKey] = useState('bootcamp');
 
 return (
 
@@ -13,18 +13,20 @@ return (
 
 
 
-<Container style={{ backgroundColor: '#322f31', color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', minHeight: "750px", maxWidth: "95%" }} fluid>
+<Container style={{  color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', minHeight: "750px", maxWidth: "85%", margin: "10em" }} fluid>
 
 
-<Tabs 
+<Tabs   style={{ margin: "2em",  borderRadius:"40px", 
+        border: "5px solid", }}
   id="controlled-tab-example"
+ 
   activeKey={key}
   onSelect={(k) => setKey(k)}
   className="mb-3"
 
 >
 
-<Tab eventKey="bootcamp" title="BootCamp Summary">
+<Tab eventKey="bootcamp" title="BootCamp Summary" defaultActiveKey>
 
                 <h4>Boot Camp Experience</h4>
                 <p>
@@ -66,11 +68,7 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
 </Row>
 </div>
       </Tab>
-      <Tab eventKey="contBreakdown" title="breakdown" disabled>
-       <h1> Emptpy </h1>
-      </Tab>
-
-      <Tab eventKey="WeeklyScores" title="Weekly Scores">
+      <Tab eventKey="WeeklyScores" title="Bootcamp Weekly Scores">
       <h4>Weekly Scores</h4>
               <Table striped bordered hover>
                 <thead>
@@ -140,16 +138,13 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
 
       </Tab>
 
-      <Tab eventKey="profile" title="Profile">
+      <Tab eventKey="profile" title="Mock Interviews Round 1">
         Tab content for Profile
       </Tab>
-      <Tab eventKey="profile" title="Profile">
+      <Tab eventKey="profile" title="MockInterviews Round 2">
         Tab content for Profile
       </Tab>
 
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
-      </Tab>
 
 </Tabs>
 

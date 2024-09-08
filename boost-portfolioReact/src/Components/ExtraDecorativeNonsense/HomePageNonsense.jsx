@@ -3,6 +3,7 @@ import fuuchanpic from "./2fab200ee45081b2d3a942cffdcc42bc.jpg";
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TextChat from "./TextChat";
+import "../../css/homepage.css"
 
 
 
@@ -40,17 +41,51 @@ and them whimsy of a corpratized internet.</p> </Row>
 <Row>
 
     <Col>
-    <Button>All Projects </Button></Col>
+    <Button 
+    size="lg"
+    >All Projects </Button></Col>
     <Col>
-    <Button> Learn About Me </Button></Col>
+    <Button
+    size="lg"
+    > Learn About Me </Button></Col>
     <Col>
-    <Button> Contact me </Button></Col>
+    <Button
+    size="lg"> Contact me </Button></Col>
     
 </Row>
 
+
 <Row>
-    <TextChat/>
+<Col>
+<div className="ChatTextBoxContainer"> 
+    
+    <h3>
+        This is a container</h3> 
+        <div className="userDialogSprite">
+        <Image
+		src={fuuchanpic}
+	alt="fuuchan"
+	rounded
+	fluid
+    style={{maxHeight: "80%"}}
+	/> 
+        </div>
+
+        <div className="userDiaglogueName"> <h4>Viscount Dante</h4> </div>
+        <div className="dialogSection">
+
+            <p> Nice to meet you! Thank you for coming! Please feel free to contact me if you have any questions! </p>
+            <FontAwesomeIcon icon={faStar} className="bouncyStar"/>
+
+        </div>
+        
+ </div>
+
+</Col>
+
 </Row>
+
+
 </Container>
 
     )
