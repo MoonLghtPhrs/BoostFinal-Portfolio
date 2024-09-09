@@ -62,7 +62,7 @@ const AboutMe = () => {
 									
 								</div>
 							</Row>
-							<Row>
+							{/* <Row>
 								<div>
 									<p
 										style={{
@@ -78,7 +78,7 @@ const AboutMe = () => {
 										You will succeed. It is inevitable. Happiness is coming.
 									</p>
 								</div>
-							</Row>
+							</Row> */}
 						</div>
 						<Row>
 							{" "}
@@ -234,18 +234,6 @@ const AboutMe = () => {
 									vanilla HtML,CSS and Javascript elements. Isn't that neat?{" "}
 								</p>
 							</div>
-							<h3> Example text</h3>
-							<p>
-								{" "}
-								Here is thie infomration that goes under it. You can put an
-								image to the right if you should choose to do so. With almost 14
-								years in Full Stack Development, I've led projects in gaming,
-								telecom, and branding, focusing on user-centric, scalable web
-								applications. I specialize in application development and
-								design, employing the latest to boost user engagement. My
-								holistic tech approach ensures optimized processes, fostering
-								strong teams and customer relationships.
-							</p>
 
 							{/* Nested Profile Information.*/}
 
@@ -257,11 +245,11 @@ const AboutMe = () => {
 										I want to blend art, the essesnce of the human expirence
 										with technology to reach new heights. I'm driven to innovate
 										user experiences and eager for partnerships that push
-										boundaries and deliver lasting value.{" "}
+										boundaries and deliver lasting value. Plus someone needs to make the tools look better! Why not me?{" "}
 									</p>
 								</Row>
 							</Row>
-							<Row>
+							{/* <Row>
 								<Col></Col>
 								<Col>
 									<h3>Areas of Interest</h3>
@@ -270,7 +258,7 @@ const AboutMe = () => {
 										people interact with technology.
 									</p>
 								</Col>
-							</Row>
+							</Row> */}
 
 							<Row>
 								<Col>

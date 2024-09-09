@@ -8,10 +8,9 @@ const ProjectList = () => {
     return (
 <div>
 
-<Container  fluid>
+<Container fluid>
 
-<Row className="d-flex justify-content-center">
-<h1>My Tech Stack</h1>
+<h1>My TechStack</h1>
 
 <div className="techStack">
 <CardGroup style={{margin: "3em"}}>
@@ -103,7 +102,7 @@ const ProjectList = () => {
   </Card>
 </CardGroup>
 </div>
-</Row>
+
 </Container>
 
 <h4>Projects</h4>

@@ -187,12 +187,12 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
         
       </Tab>
 
-      <Tab eventKey="Mentors" title="Mentors - underconstruction"
+      {/* <Tab eventKey="Mentors" title="Mentors"
       style={{borderRadius: "20px", padding: "2em", backgroundColor: "#FFF9F4",
         margin: "2em",
-                            border: "6px solid #FFF9F4",}} disabled>
+                            border: "6px solid #FFF9F4",}}  disabled>
         Tab content for Profile
-      </Tab>
+      </Tab> */}
 
      
 {/* 
