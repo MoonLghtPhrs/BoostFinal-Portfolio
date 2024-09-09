@@ -49,13 +49,7 @@ const HomepageNonsense = () => {
 					</div>
 				</Col>
 				<Col>
-					<Image
-						src={fuuchanpic}
-						alt="fuuchan"
-						rounded
-						fluid
-						style={{ maxHeight: "80%" }}
-					/>
+					
 				</Col>
 			</Row>
 

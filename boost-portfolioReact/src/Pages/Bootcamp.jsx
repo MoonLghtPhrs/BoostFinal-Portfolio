@@ -8,7 +8,7 @@ const Bootcamp = () => {
     return (
       <>
    <Container fluid style={{  backgroundColor: "#9DC7B6", }}>
-    <Row style={{display: "flex"}}> 
+    {/* <Row style={{display: "flex"}}> 
       <Col>
       <div className="qotebanner" style={{
       marginLeft: "4em",
@@ -40,7 +40,7 @@ const Bootcamp = () => {
       <Col></Col>
 
 
-    </Row>
+    </Row> */}
     <Row>
     <BootCampTabs />
     </Row>
