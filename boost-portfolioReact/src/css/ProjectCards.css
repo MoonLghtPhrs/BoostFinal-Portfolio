@@ -1,4 +1,9 @@
-
 .projectCard {
-   
+  max-height: max-content;
+  border: 6px solid #fff9f4;
+  border-radius: 50px;
+  background-color: rgba(255, 249, 244, 0.8);
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

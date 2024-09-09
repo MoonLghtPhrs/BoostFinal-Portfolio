@@ -1,6 +1,6 @@
 import { CardBody, CardFooter, CardHeader, Card, Button, CardText, CardImg } from "react-bootstrap"
 
-const ProjectCard = ({}) => {
+const ProjectCardOld = ({}) => {
     return (
         <>
         <p> Here are a few things I have worked on </p>
@@ -67,4 +67,4 @@ style={{padding: "50px",}}
         
     )
 }
-export default ProjectCard;
+export default ProjectCardOld;
