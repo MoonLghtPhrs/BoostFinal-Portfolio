@@ -13,11 +13,11 @@ return (
 
 
 
-<Container style={{  color: '#b7b2a6', borderColor: 'hsla(0,0%,100%, .15)', minHeight: "750px", maxWidth: "85%", margin: "10em" }} fluid>
+<Container style={{   borderColor: 'hsla(0,0%,100%, .15)', minHeight: "750px"}} fluid>
 
-
-<Tabs   style={{ margin: "2em",  borderRadius:"40px", 
-        border: "5px solid", }}
+<div style={{}}>
+<Tabs style={{ margin: "2em",  borderRadius:"40px", 
+        border: "1px solid", padding: "16px" }}
   id="controlled-tab-example"
  
   activeKey={key}
@@ -26,7 +26,9 @@ return (
 
 >
 
-<Tab eventKey="bootcamp" title="BootCamp Summary" defaultActiveKey>
+<Tab style={{borderRadius: "20px",
+margin: "2em",
+										border: "6px solid #FFF9F4",}} eventKey="bootcamp" title="BootCamp Summary" defaultActiveKey>
 
                 <h4>Boot Camp Experience</h4>
                 <p>
@@ -144,9 +146,10 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
       <Tab eventKey="profile" title="MockInterviews Round 2">
         Tab content for Profile
       </Tab>
-
+      
 
 </Tabs>
+</div>
 
     </Container>
   );
