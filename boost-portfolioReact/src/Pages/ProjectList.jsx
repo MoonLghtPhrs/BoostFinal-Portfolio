@@ -8,9 +8,10 @@ const ProjectList = () => {
     return (
 <div>
 
-<Container fluid>
+<Container  fluid>
 
-<h1>Projects</h1>
+<Row className="d-flex justify-content-center">
+<h1>My Tech Stack</h1>
 
 <div className="techStack">
 <CardGroup style={{margin: "3em"}}>
@@ -39,9 +40,6 @@ const ProjectList = () => {
 
 </ul>
 </CardText>
-<Card.Footer>
-          <small className="text-muted">Designers Keep apps usable</small>
-        </Card.Footer>
         </CardBody>
   </Card>
 
@@ -59,10 +57,6 @@ const ProjectList = () => {
   <li>netify</li>
 </CardText>
 
-
-<Card.Footer>
-          <small className="text-muted">It's more than make it pretty</small>
-        </Card.Footer>
         </CardBody>
   </Card>
 
@@ -79,9 +73,6 @@ const ProjectList = () => {
   <li>Git</li>
   <li>netify</li>
 </CardText>
-<Card.Footer>
-          <small className="text-muted">Like meat and potatos</small>
-        </Card.Footer>
         </CardBody>
   </Card>
 
@@ -108,14 +99,11 @@ const ProjectList = () => {
 <li>Procreate</li>
 </ul>
 </CardText>
-<Card.Footer>
-          <small className="text-muted">No Gen AI here. All skill.</small>
-        </Card.Footer>
         </CardBody>
   </Card>
 </CardGroup>
 </div>
-
+</Row>
 </Container>
 
 <h4>Projects</h4>

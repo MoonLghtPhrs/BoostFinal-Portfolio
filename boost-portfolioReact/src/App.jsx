@@ -23,8 +23,8 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<AboutMe/>} />
     <Route path="/bootcamp" element={<Bootcamp/>} />
-    <Route path="/coding-projects" element={<ProjectList/>} />
-    <Route path="/resume-download" element={<Resume/>} />
+    <Route path="/coding-projects" element={<ProjectList/>}  />
+    <Route path="/resume-download" element={<Resume/>}  />
     </Routes>
     </BrowserRouter>
     

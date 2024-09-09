@@ -2,6 +2,7 @@ import { Button, Container, Col, Row, Image } from 'react-bootstrap'
 import UsingHas from '../Themes/UsingHas';
 import HomepageNonsense from '../Components/ExtraDecorativeNonsense/HomePageNonsense';
 import "../css/homepage.css"
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -25,16 +26,16 @@ margin: "4em",
 							/> */}
 						</div> </Col>
 
-                        <Col> 
-                        <div className="SplashBox"> 
-                            <h1>Boost Portfolio</h1>
-                            <Row>
-							{" "}
-							<h3> Hello and welcome to Vai's portfolio!</h3>
-						</Row>
+                        <Col md> 
+                        <div className="dialogSection"
+                        
+                        > 
+                            <h1 style={{margin:"2rem", paddingLeft:"2em"}}>Hello and welcome to Vai's portfolio!</h1>
+                          
 						<Row>
 							{" "}
-							<p>
+							<p
+                            style={{"margin":"2em", "paddingLeft":"2em"}}>
 								{" "}
 								Vai is a full-stack engineer and visual designer that loves
 								video games! I'm a new programmer who loves old web aesthetics
@@ -42,20 +43,19 @@ margin: "4em",
 								whimsy of a corpratized internet.
 							</p>{" "}
 						</Row>
-                        <Row>
-                <Col>
-					<Button className=
-                    'homepagebuttons'
-                    size="lg">All Projects </Button> </Col>
-				<Col>
-					<Button  className=
-                    'homepagebuttons' size="lg"> Learn About Me </Button></Col>
-				<Col>
-					<Button  className=
-                    'homepagebuttons' size="lg"> Contact me </Button></Col>
-				
-			</Row>
-
+                                        <Row>
+                                            <div className="d-flex justify-content-center">
+                
+                     <Link to="/coding-projects">
+                                    <Button className='homepagebuttons' size="lg">All Projects </Button>
+                                </Link>
+			
+                     <Link to="/about">
+                                    <Button className='homepagebuttons' size="lg"> Learn About Me </Button>
+                                </Link>
+		
+                    </div>
+                   </Row>
                         </div>
                         </Col>
                 </Row>

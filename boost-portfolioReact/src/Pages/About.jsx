@@ -197,7 +197,7 @@ const AboutMe = () => {
 									}}
 								>
 									<div style={{ marginleft: "5em" }}>
-										<h1 style={{ marginleft: "2em", padding: "20p" }}>
+										<h1 style={{ marginleft: "2em", padding: "20p", }}>
 											お金稼ぐ。俺は
 											<FontAwesomeIcon icon={faStar} />
 										</h1>
@@ -210,7 +210,7 @@ const AboutMe = () => {
 							style={{
 								backgroundColor: " rgba(255, 249, 244, 0.8)",
 								color: "#43566D",
-								marginTop: "2em",
+								
 
 								border: "6px solid #FFF9F4",
 							}}
@@ -310,8 +310,7 @@ const AboutMe = () => {
 									
 									<h3> Resume and Work History</h3>
 										<p> Get a ATS friendly pdf version of my resume here!</p>
-										<Button 
-										style={{maxWidth: "40%"}}>View Resume </Button>
+										<Button href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer" style={{maxWidth: "40%"}}>View Resume</Button>
 									</Row>
 									
 								<Row>

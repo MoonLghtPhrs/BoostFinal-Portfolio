@@ -27,17 +27,13 @@ color:#c8b6e7;
 
 .dialogSection {
 	width: 1180px;
-	height: 225px;
-	padding: 20px;
+	height: auto;
+	padding: 50px;
+	padding-left: "2em";
 	align-items: center;
-align-content: stretch;
-	border-radius: 0px 183.614px 183.614px 0px;
+	border-radius: 200px;
 	border: 4.568px solid #9dcae9;
 	background: rgba(218, 235, 246, 0.75);
-  z-index:0;
-position: relative;
-top: 45px;
-left: -400px;
 }
 
 .userDialogSprite {
@@ -51,7 +47,8 @@ left: -400px;
      background-position:center;
     position: relative;
     z-index: 2;
-    top: 2.5rem;
+    top: 2.5em;
+	left: 10em;
    
     
 }

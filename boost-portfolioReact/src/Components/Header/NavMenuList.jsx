@@ -10,8 +10,8 @@ return (
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">About Me</Nav.Link>
           <Nav.Link as={Link} to="/bootcamp">Bootcamp</Nav.Link>
-          <Nav.Link as={Link} to="/resume-download">Resume</Nav.Link>
-          <Nav.Link as={Link} to="/coding-projects">Projects</Nav.Link>
+          <Nav.Link as={Link} to="/resume-download" disabled hidden>Resume</Nav.Link>
+          <Nav.Link as={Link} to="/coding-projects"hidden>Projects </Nav.Link>
           </Nav>
 );
 };
