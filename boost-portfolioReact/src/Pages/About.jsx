@@ -24,38 +24,18 @@ const AboutMe = () => {
 		<>
 			<Container
 				fluid
+				
 				style={{
-					// backgroundImage: "url(/public/assets/ffxiv_11192022_130910_344-2.png)",
 					backgroundColor: "#9DC7B6",
 					backgroundRepeat: "no-repeat",
 				}}
 			>
-				{/* <Row>
-					<Col md={8}></Col>
-						
-					<Col><div className="miniHeader">
-							<h1 style={{justifyContent: "right",
-							backgroundColor: " rgba(255, 249, 244, 0.8)",
-							color: "#43566D", 
-							
-							borderRadius: "50em 50em 20px 20px",
-								border: "6px solid #FFF9F4",
-
-							}}>お金稼ぐ。俺は
-							<FontAwesomeIcon icon={faStar} />
-							</h1>
-						</div></Col></Row> */}
+				
 				<Row>
 					{/* Header row left */}
-					{/* <Col>
-						<div className="miniHeader">
-							<h2>お金稼ぐ。俺は MiddleRow
-							<FontAwesomeIcon icon={faStar} />
-							</h2>
-						</div>
-					</Col> */}
+					
 				</Row>
-				<Row style={{ marginTop: "4em" }}>
+				<Row style={{ marginTop: "4em" }} className="d-flex justify-content-center">
 					<Col
 						md={3}
 						style={{ marginRight: "1.5em", marginLeft: "2em" }}
@@ -79,12 +59,7 @@ const AboutMe = () => {
 										position: "relative",
 									}}
 								>
-									{/* <Image
-									src={fuuchanpic}
-									alt="fuuchan"
-									rounded
-									fluid
-								/> */}
+									
 								</div>
 							</Row>
 							<Row>
@@ -116,7 +91,10 @@ const AboutMe = () => {
 								borderRadius: "50px",
 								minWidth: "100%",
 								backgroundColor: " rgba(255, 249, 244, 0.8)",
-								padding: "2rem",
+								padding: "2em",
+								marginTop:"2em",
+								marginBottom:"2em",
+						
 							}}
 						>
 							<Col>
@@ -153,28 +131,35 @@ const AboutMe = () => {
 								minWidth: "100%",
 								backgroundColor: " rgba(255, 249, 244, 0.8)",
 								padding: "2rem",
+								marginTop:"2em",
+								marginBottom:"2em",
 							}}
-						>
-							<Col>
+						> 
+						<p> Tech Stack</p>
+						<Col>
 								{/* Nested Table */}
-								<b>
-									<Row>Name</Row>
-									<Row>Pronouns</Row>
-									<Row>Location</Row>
-									<Row>Skills</Row>
-									<Row>Hobbies</Row>
-									<Row> Languages</Row>
-								</b>
+								
+																	<ul><p>Frontend Development</p> 
+																		<li>Figma</li>
+																		<li>React</li>
+																		<li>Javascript</li>
+																		<li>GraphQL</li>
+																		<li>Apollo</li>
+																		<li>Bootstrap</li>
+																	</ul>
+								
 							</Col>
 							<Col>
 								{/* Nested Table */}
-								<Row>Vai</Row>
-								<Row>They/Them/Theirs</Row>
-								<Row>Los angeles, California</Row>
-								<Row>Illustration, UX Design, Full Stack Engineer</Row>
-								<Row>Drawing and playing video games</Row>
-								<Row> English (navtive), 日本語（N3）, 한글 TOPIK-I</Row>
+							
+								<ul> 	<p> Backend Development</p>
+								<li>Java</li>
+								<li>Springboot</li>
+								<li>C#</li>
+								<li>postGressSQL</li>
+								</ul>
 							</Col>
+						
 						</Row>
 
 
@@ -194,6 +179,7 @@ const AboutMe = () => {
 					<Col
 						md={6}
 						style={{ marginLeft: "1.5rem" }}
+						
 					>
 						{/* Right Column */}
 						<Row>
@@ -313,27 +299,23 @@ const AboutMe = () => {
 								backgroundColor: " rgba(255, 249, 244, 0.8)",
 								color: "#43566D",
 								marginTop: "2em",
-
+								padding: "2rem",
 								border: "6px solid #FFF9F4",
-								display: "flex",
+								
 							}}
 						>
-							<div
-								className="WorkAccordoinHistory"
-								style={{ alignItems: "center", display: "flex" }}
-							>
-								<h3> Resume and Work History</h3>
+							
 
 								<Row>
-									<Col>
+									
+									<h3> Resume and Work History</h3>
 										<p> Get a ATS friendly pdf version of my resume here!</p>
-									</Col>
-									<Col>
-										<Button>View Resume </Button>
-									</Col>
-								</Row>
+										<Button 
+										style={{maxWidth: "40%"}}>View Resume </Button>
+									</Row>
+									
 								<Row>
-									<Accordion style={{ width: "800px" }}>
+									<Accordion style={{ width: "auto" }}>
 										<AccordionItem eventKey="0">
 											<AccordionHeader>
 												{" "}
@@ -488,8 +470,9 @@ const AboutMe = () => {
 											</AccordionBody>
 										</AccordionItem>
 									</Accordion>
+									
 								</Row>
-							</div>
+							
 						</Row>
 
 						<Row>
@@ -500,8 +483,8 @@ const AboutMe = () => {
 									color: "#43566D",
 									marginTop: "2em",
 									border: "6px solid #FFF9F4",
-									alignItems: "center",
-									display: "flex",
+									padding: "2rem"
+									
 								}}
 							>
 								<Col>
@@ -511,7 +494,7 @@ const AboutMe = () => {
 
 								<Accordion
 									style={{
-										width: "800px",
+										width: "auto",
 									}}
 								>
 									<AccordionItem eventKey="0">
@@ -537,11 +520,11 @@ const AboutMe = () => {
 					</Col>
 				</Row>
 
-				<Col>
+				{/* <Col>
 					<Row>
 						<h3>Contact me</h3>
 					</Row>
-				</Col>
+				</Col> */}
 			</Container>
 		</>
 	);
