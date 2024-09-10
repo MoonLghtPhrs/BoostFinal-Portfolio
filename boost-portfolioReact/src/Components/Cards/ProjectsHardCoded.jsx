@@ -44,13 +44,6 @@ const ProjectsHardCoded = () => {
                     choice.{" "}
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                  <ListGroup.Item>Springboot</ListGroup.Item>
-                  <ListGroup.Item>React</ListGroup.Item>
-                  <ListGroup.Item>postGressSQL</ListGroup.Item>
-                </ListGroup>
               </CardBody>
               <Button href=""> View On Github</Button>
             </Card>
@@ -67,12 +60,6 @@ const ProjectsHardCoded = () => {
                    This was a cooperative project between myself a Boost Team member. The goal of this project was to test the connectivity between Java, Springboot and PostGress SQL. A prime goal was to understand REST API's and how they can be used to alter data within a database{" "}
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                  <ListGroup.Item>Springboot</ListGroup.Item>
-                  <ListGroup.Item>postGressSQL</ListGroup.Item>
-                </ListGroup>
               </CardBody>
               <Button href=""> View On Github</Button>
             </Card>
@@ -84,7 +71,7 @@ const ProjectsHardCoded = () => {
           <Card className="projectCard">
               <CardTitle> Dictionary App </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} />
+                <Card.Img variant="top" src={shockedpika}x />
                 <CardText>
                   <p>
                     {" "}
@@ -92,10 +79,7 @@ const ProjectsHardCoded = () => {
                    {" "}
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                </ListGroup>
+            
               </CardBody>
               <Button href=""> View On Github</Button>
             </Card>
@@ -122,14 +106,7 @@ const ProjectsHardCoded = () => {
                     <strong> Please note </strong>: This project is Indeed internal only. This code is not avaliable for viewing outside of Indeed.
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                  <ListGroup.Item>Springboot</ListGroup.Item>
-                  <ListGroup.Item>postGressSQL</ListGroup.Item>
-                  <ListGroup.Item>React</ListGroup.Item>
-                  <ListGroup.Item>IFL - Internal Tooling</ListGroup.Item>
-                </ListGroup>
+                
               </CardBody>
               <Button href="" disabled> View On Github</Button>
             </Card>
@@ -150,12 +127,7 @@ const ProjectsHardCoded = () => {
                    {" "}
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                  <ListGroup.Item>Springboot</ListGroup.Item>
-                  <ListGroup.Item>postGressSQL</ListGroup.Item>
-                </ListGroup>
+                
               </CardBody>
               <Button href=""> View On Github</Button>
             </Card>
@@ -174,12 +146,7 @@ const ProjectsHardCoded = () => {
                    {" "}
                   </p>
                 </CardText>
-                <ListGroup variant="flush">
-                  <p>Fullstack</p>
-                  <ListGroup.Item>Java</ListGroup.Item>
-                  <ListGroup.Item>Springboot</ListGroup.Item>
-                  <ListGroup.Item>postGressSQL</ListGroup.Item>
-                </ListGroup>
+               
               </CardBody>
               <Button href=""> View On Github</Button>
             </Card>

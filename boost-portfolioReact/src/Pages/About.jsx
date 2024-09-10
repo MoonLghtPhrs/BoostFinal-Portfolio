@@ -298,7 +298,7 @@ const AboutMe = () => {
 									
 									<h3> Resume and Work History</h3>
 										<p> Get a ATS friendly pdf version of my resume here!</p>
-										<Button href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer" style={{maxWidth: "40%"}}>View Resume</Button>
+										<Button bsClass="customButton" href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer" style={{maxWidth: "40%"}}>View Resume</Button>
 									</Row>
 									
 								<Row>

@@ -1,5 +1,4 @@
 import { Button, Container, Col, Row, Image } from 'react-bootstrap'
-import UsingHas from '../Themes/UsingHas';
 import HomepageNonsense from '../Components/ExtraDecorativeNonsense/HomePageNonsense';
 import "../css/homepage.css"
 import { Link } from 'react-router-dom';
