@@ -180,21 +180,20 @@ const AboutMe = () => {
 								<div
 									className="miniHeader"
 									style={{
-										justifyContent: "right",
-										backgroundColor: " #white",	
+										backgroundColor: " rgba(218, 235, 246, 0.75)",	
 										color: "#43566D",
 										marginTop: "2em",
 										marginLeft:"2em",
 										borderRadius: "50em 50em 20px 20px",
-										border: "10px solid #828FB6",
+										border: "5px solid #828FB6",
 									}}
 								>
-									<div style={{ marginleft: "7em" }}>
-										<p style={{ marginleft: "6em", paddingleft: "20px", color:"white", fontSize:"30px", fontWeight:"bold", left: "50px"}}>
+
+<p style={{ marginleft: "6em", paddingleft: "120px", fontSize:"32px", fontWeight:"bold", left: "125px", top: "10px", position: "relative", fontFamily: "Helvetica Neue", textTransform: "uppercase", letterSpacing: ".2em", }}> 
 											お金稼ぐ。俺は
-											<FontAwesomeIcon icon={faStar} />
+											<FontAwesomeIcon icon={faStar} />! 
 										</p>
-									</div>
+									
 								</div>
 							</Col>
 						</Row>
@@ -303,7 +302,7 @@ const AboutMe = () => {
 									
 									<h3> Resume and Work History</h3>
 										<p> Get a ATS friendly pdf version of my resume here!</p>
-										<button className="customButton" href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</button>
+										<button className="customButton" href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer">Download ATS Resume Resume</button>
 									</Row>
 									
 								<Row>
@@ -424,7 +423,7 @@ const AboutMe = () => {
 											</AccordionBody>
 										</AccordionItem>
 
-										<AccordionItem eventKey="0">
+										<AccordionItem eventKey="1">
 											<AccordionHeader>
 												{" "}
 												Colosseum Athletics - Social Media Intern Nov 2019 –
@@ -432,33 +431,39 @@ const AboutMe = () => {
 											</AccordionHeader>
 											<AccordionBody>
 												<ul>
-													Increased conversion rates on email marketing
-													newsletter by 0.5% by improving formatting, calls to
-													action and interesting email subjects in MailChimp
-													Consistently managed multiple social media accounts A
-													schedules (Facebook, Instagram) by maintaining strict
-													time management Created unique marketing materials
-													that served to establish a brand voice Successfully
+												<li>Increased conversion rates on email marketing
+													newsletter by 0.5% by improving formatting, all CTAs and interesting email subjects in MailChimp</li>
+													<li>Consistently managed multiple social media accounts A
+													schedules (Facebook, Instagram) </li>
+													<li>Created unique marketing materials
+													that served to establish a brand voice</li>
+													
+													<li> Successfully
 													promoted merchandise sales by utilizing professional
 													relationships with brand ambassadors and Instagram
-													influencers. Constructed in-house photo shoots to
+													influencers. </li>
+													<li>Constructed in-house photo shoots to
 													create engaging polished content for websites and
-													social media.
+													social media. </li>
 												</ul>
 											</AccordionBody>
 										</AccordionItem>
 
-										<AccordionItem eventKey="0">
+										<AccordionItem eventKey="2">
 											<AccordionHeader>
 												{" "}
 												Conduent – Data Entry Specialist May 2019 – Nov 2019{" "}
 											</AccordionHeader>
 											<AccordionBody>
-												Reduced project workload by entering large amounts of
-												data ahead of schedule, reducing pressure on team
+												<ul>
+												<li>Reduced project workload by entering large amounts of
+												data ahead of schedule, reducing pressure on team</li>
 												members and focusing on high priority projects.
-												Maintained highly organized file systems allowing for
-												easy access to important evidence and client notice.
+
+												<li>Maintained highly organized file systems allowing for
+												easy access to important evidence and client notice.</li>
+
+												</ul>
 											</AccordionBody>
 										</AccordionItem>
 									</Accordion>
@@ -496,15 +501,18 @@ const AboutMe = () => {
 										</AccordionHeader>
 										<AccordionBody> BFA Illustration</AccordionBody>
 									</AccordionItem>
-
-									<AccordionItem eventKey="0">
-										<AccordionHeader> Hongik University</AccordionHeader>
-										<AccordionBody> BFA Illustration</AccordionBody>
+<AccordionItem eventKey="3">
+	<AccordionHeader> UCLA Extension 2023 </AccordionHeader>
+	<AccordionBody> User Expirence Certification Course</AccordionBody>
+</AccordionItem>
+									<AccordionItem eventKey="1">
+										<AccordionHeader> Hongik University, South Korea 2017</AccordionHeader>
+										<AccordionBody> Study Abroad program, Communication Design</AccordionBody>
 									</AccordionItem>
 
-									<AccordionItem eventKey="0">
-										<AccordionHeader> Long Beach City College</AccordionHeader>
-										<AccordionBody> BFA Illustration</AccordionBody>
+									<AccordionItem eventKey="2">
+										<AccordionHeader> Long Beach City College 2015- 2017</AccordionHeader>
+										<AccordionBody> Recreational Art Classes</AccordionBody>
 									</AccordionItem>
 								</Accordion>
 							</div>

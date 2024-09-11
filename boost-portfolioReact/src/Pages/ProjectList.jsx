@@ -20,16 +20,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import shockedpika from "../assets/meme-pikachu.gif";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ProjectsHardCoded from "../Components/Cards/ProjectsHardCoded";
+import tileCover from "../../public/assets/UiELBEg.png";
+import "../css/ProjectCards.css";
 
 const ProjectList = () => {
   return (
     <div>
-      <Container fluid>
-        <h1>My TechStack</h1>
+      <Container fluid style={{ backgroundColor: "#9DC7B6", backgroundImage: `url(${tileCover})`, backgroundRepeat: "repeat",  width: "100%", height: "100%" }}>
+       
 
-        <div className="techStack">
-          <CardGroup style={{ margin: "3em" }}>
-            <Card>
+        <div >
+        <h1 style={{ margin: "2em" }}>My TechStack</h1>
+          <CardGroup  className="techStack" style={{ margin: "3em" }}>
+            <Card className="TechCards" >
               <CardBody>
                 <CardTitle>Design & Expirence</CardTitle>
                 <CardText>
@@ -63,7 +66,7 @@ const ProjectList = () => {
               </CardBody>
             </Card>
 
-            <Card>
+            <Card className="TechCards">
               <CardBody>
                 <CardTitle>Frontend Developer</CardTitle>
                 <CardText>
@@ -87,12 +90,12 @@ const ProjectList = () => {
               </CardBody>
             </Card>
 
-            <Card>
+            <Card className="TechCards">
               <CardBody>
                 <CardTitle> Backend Development</CardTitle>
                 <CardText>
                   <div>
-                    <FontAwesomeIcon icon="fa-solid fa-terminal" />
+                    <FontAwesomeIcon icon="fa-solid fa-terminal"/>
                   </div>
                   <p>
                     I like to code from scratch. The feeling of building from
@@ -110,7 +113,7 @@ const ProjectList = () => {
               </CardBody>
             </Card>
 
-            <Card>
+            <Card className="TechCards">
               <CardBody>
                 <CardTitle>Artist</CardTitle>
                 <CardText>
@@ -141,14 +144,17 @@ const ProjectList = () => {
             </Card>
           </CardGroup>
         </div>
-      </Container>
+        {/* End tech stack cards */}
+      
 
       <h4>Projects</h4>
       <p> Here are a few things I have worked on </p>
       <div className="cardContainerProject"></div>
         <ProjectsHardCoded />
       {/* Final closing div for the entire page below */}
+      </Container>
     </div>
+   
   );
 };
 export default ProjectList;

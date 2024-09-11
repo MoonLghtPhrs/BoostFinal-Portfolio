@@ -22,12 +22,12 @@ const BootCampTabs = () => {
 
   return (
     <Container
-      style={{ borderColor: "hsla(0,0%,100%, .15)", minHeight: "750px" }}
+      style={{ minHeight: "750px" }}
       fluid
     >
       <div style={{}}>
         <Tabs
-          style={{ borderRadius: "40px", marginTop: "2em", padding: "16px" }}
+          style={{ marginTop: "2em", padding: "16px" }}
           id="controlled-tab-example"
           activeKey={key}
           onSelect={(k) => setKey(k)}
@@ -38,7 +38,7 @@ const BootCampTabs = () => {
               borderRadius: "20px",
               padding: "2em",
               backgroundColor: "#FFF9F4",
-              border: "6px solid #FFF9F4",
+              border: "6px solid #828FB6",
             }}
             eventKey="bootcamp"
             title="BootCamp Summary"
@@ -84,7 +84,7 @@ const BootCampTabs = () => {
               padding: "2em",
               backgroundColor: "#FFF9F4",
               margin: "2em",
-              border: "6px solid #FFF9F4",
+              border: "6px solid #828FB6",
             }}
           >
             <h4>Phase 1: Bootcamp Program Feedback</h4>
@@ -251,7 +251,7 @@ So i'll probably just write ou t the cards themselves. Hope you like the content
               borderRadius: "20px",
               padding: "2em",
               backgroundColor: "#FFF9F4",
-              border: "6px solid #FFF9F4",
+              border: "6px solid #828FB6",
             }}
           >
             <h4>Weekly Scores</h4>

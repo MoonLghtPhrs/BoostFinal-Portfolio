@@ -1,13 +1,33 @@
 .projectCard {
-  max-height: max-content;
-  border: 6px solid #fff9f4;
-  border-radius: 50px;
-  background-color: rgba(255, 249, 244, 0.8);
+  max-height: auto;
+  background-color:  rgba(218, 235, 246, 0.75);
+  border-radius: 20px;
+  border: 3px solid #828FB6;
   padding: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+
 }
 
-Card.Img {
-  
+ .techStack{
+  background-color:  rgba(218, 235, 246, 0.75);
+  border-radius: 20px;
+  border: 3px solid #828FB6;
+
+}
+
+.TechCards {
+  border-radius: 20px;
+  border: 3px solid #828FB6;
+
+}
+
+.githubButtons {
+  background-color: #828FB6;
+  margin: 20px;
+  border-radius: 20px;
+  border: 3px solid #828FB6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
 }

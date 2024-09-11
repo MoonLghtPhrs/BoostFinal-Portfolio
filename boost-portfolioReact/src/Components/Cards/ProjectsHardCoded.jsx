@@ -6,7 +6,6 @@ import {
   Nav,
   Card,
   CardImg,
-  Button,
   Table,
   Container,
   ListGroup,
@@ -32,7 +31,7 @@ const ProjectsHardCoded = () => {
             <Card className="projectCard">
               <CardTitle> LL&P Healthcare</CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto"}}  />
+                {/* <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto"}}  /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -45,7 +44,7 @@ const ProjectsHardCoded = () => {
                   </p>
                 </CardText>
               </CardBody>
-              <Button href=""> View On Github</Button>
+              <button className="githubButtons" href=""> View On Github</button>
             </Card>
           </Col>
 
@@ -53,7 +52,7 @@ const ProjectsHardCoded = () => {
           <Card className="projectCard">
               <CardTitle> League Manager App </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} />
+                {/* <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -61,7 +60,7 @@ const ProjectsHardCoded = () => {
                   </p>
                 </CardText>
               </CardBody>
-              <Button href=""> View On Github</Button>
+              <button  className="githubButtons" href=""> View On Github</button>
             </Card>
           
           </Col>
@@ -71,7 +70,7 @@ const ProjectsHardCoded = () => {
           <Card className="projectCard">
               <CardTitle> Dictionary App </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika}x />
+                {/* <Card.Img variant="top" src={shockedpika}x /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -81,7 +80,7 @@ const ProjectsHardCoded = () => {
                 </CardText>
             
               </CardBody>
-              <Button href=""> View On Github</Button>
+              <button className="githubButtons" href=""> View On Github</button>
             </Card>
           
           </Col>
@@ -94,7 +93,7 @@ const ProjectsHardCoded = () => {
           <Card className="projectCard">
               <CardTitle> Boost: Mentor Match </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} />
+                {/* <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -108,7 +107,7 @@ const ProjectsHardCoded = () => {
                 </CardText>
                 
               </CardBody>
-              <Button href="" disabled> View On Github</Button>
+              <button className="githubButtons"  href="" disabled> View On Github</button>
             </Card>
           
           </Col>
@@ -118,7 +117,7 @@ const ProjectsHardCoded = () => {
           <Card className="projectCard">
               <CardTitle> Personal Portfolio </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} />
+                {/* <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -129,17 +128,17 @@ const ProjectsHardCoded = () => {
                 </CardText>
                 
               </CardBody>
-              <Button href=""> View On Github</Button>
+              <button className="githubButtons"  href=""> View On Github</button>
             </Card>
           
           </Col>
 
           <Col>
           
-          <Card>
+          <Card className="projectCard">
               <CardTitle> Dictionary App </CardTitle>
               <CardBody>
-                <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} />
+                {/* <Card.Img variant="top" src={shockedpika} style={{width: "200px", height:"auto",}} /> */}
                 <CardText>
                   <p>
                     {" "}
@@ -148,7 +147,7 @@ const ProjectsHardCoded = () => {
                 </CardText>
                
               </CardBody>
-              <Button href=""> View On Github</Button>
+              <button className="githubButtons" href=""> View On Github</button>
             </Card>
           
           </Col>

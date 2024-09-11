@@ -3,11 +3,11 @@ import {Tab, Row, Col, Nav, Card, CardImg, Button, Table, Container, ListGroup, 
 import "bootstrap/dist/css/bootstrap.min.css";
 import shockedpika from "../assets/meme-pikachu.gif"
 import BootCampTabs from "../Components/BootCampTabs";
-
+import tileCover from "../../public/assets/UiELBEg.png";
 const Bootcamp = () => {
     return (
       <>
-   <Container fluid style={{  backgroundColor: "#9DC7B6", }}>
+   <Container fluid style={{  backgroundColor: "#9DC7B6",backgroundImage: `url(${tileCover})`, backgroundRepeat: "repeat"  }}>
     {/* <Row style={{display: "flex"}}> 
       <Col>
       <div className="qotebanner" style={{
