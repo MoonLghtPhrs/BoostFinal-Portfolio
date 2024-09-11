@@ -1,3 +1,16 @@
 .customButton {
-    background: blueviolet;
+    background-color: #828FB6;
+    margin: 20px;
+    border-radius: 20px;
+    border: 3px solid #828FB6;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+  
+}
+
+.sideprofile {
+    background-color:  rgba(218, 235, 246, 0.75)"
+
 }

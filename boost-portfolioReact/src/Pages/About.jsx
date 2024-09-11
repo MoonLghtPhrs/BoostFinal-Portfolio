@@ -1,23 +1,12 @@
-import {
-	Col,
-	Row,
-	Container,
-	Tab,
-	Tabs,
-	Image,
-	Button,
-	Accordion,
-	AccordionCollapse,
-	AccordionItem,
-	AccordionHeader,
-	AccordionBody,
-} from "react-bootstrap";
+import {Col, Row, Container, Button, Accordion, AccordionCollapse, AccordionItem, AccordionHeader, AccordionBody,} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import CardSample from "../Components/Cards/profileCardSample";
 import fuuchanpic from "../assets/monkey-puppet-omg-shock-gif.gif";
 import seiraBG from "../assets/ffxiv_11192022_130910_344-2.png";
-
+import tileCover from "../../public/assets/UiELBEg.png";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../css/AboutPage.css";
 
 const AboutMe = () => {
 	return (
@@ -26,8 +15,10 @@ const AboutMe = () => {
 				fluid
 				
 				style={{
-					backgroundColor: "#9DC7B6",
-					backgroundRepeat: "no-repeat",
+					backgroundColor: "#828FB6",
+					
+					 backgroundImage: `url(${tileCover})`, 
+					 backgroundRepeat: "repeat"
 				}}
 			>
 				
@@ -44,7 +35,7 @@ const AboutMe = () => {
 
 						<div className="sidebar">
 							<Row>
-								<div className="sideprofile"></div>
+								<div className="panels"></div>
 								<div
 									className="imgContainer"
 									style={{
@@ -55,7 +46,7 @@ const AboutMe = () => {
 										backgroundPosition: "auto",
 										minHeight: "350px",
 										borderRadius: "50em 50em 20px 20px",
-										border: "6px solid #FFF9F4",
+										border: "6px solid #828FB6",
 										position: "relative",
 									}}
 								>
@@ -70,7 +61,8 @@ const AboutMe = () => {
 											fontSize: " 25px",
 											textTransform: "uppercase",
 											letterSpacing: ".2em",
-											backgroundColor: " rgba(255, 249, 244, 0.8)",
+											backgroundColor: " rgba(218, 235, 246, 0.75)
+",
 											fontWeight: "500",
 										}}
 									>
@@ -87,10 +79,10 @@ const AboutMe = () => {
 
 						<Row
 							style={{
-								border: "6px solid #FFF9F4",
+								border: "6px solid #828FB6",
 								borderRadius: "50px",
 								minWidth: "100%",
-								backgroundColor: " rgba(255, 249, 244, 0.8)",
+								backgroundColor: " rgba(218, 235, 246, 0.75)",
 								padding: "2em",
 								marginTop:"2em",
 								marginBottom:"2em",
@@ -126,10 +118,10 @@ const AboutMe = () => {
 
 <Row
 							style={{
-								border: "6px solid #FFF9F4",
+								border: "6px solid #828FB6",
 								borderRadius: "50px",
 								minWidth: "100%",
-								backgroundColor: " rgba(255, 249, 244, 0.8)",
+								backgroundColor: " rgba(218, 235, 246, 0.75)",
 								padding: "2rem",
 								marginTop:"2em",
 								marginBottom:"2em",
@@ -184,23 +176,24 @@ const AboutMe = () => {
 						{/* Right Column */}
 						<Row>
 							<Col></Col>
-							<Col md={10}>
+							<Col md={11}>
 								<div
 									className="miniHeader"
 									style={{
 										justifyContent: "right",
-										backgroundColor: " rgba(255, 249, 244, 0.8)",
+										backgroundColor: " #white",	
 										color: "#43566D",
 										marginTop: "2em",
+										marginLeft:"2em",
 										borderRadius: "50em 50em 20px 20px",
-										border: "6px solid #FFF9F4",
+										border: "10px solid #828FB6",
 									}}
 								>
-									<div style={{ marginleft: "5em" }}>
-										<h1 style={{ marginleft: "2em", padding: "20p", }}>
+									<div style={{ marginleft: "7em" }}>
+										<p style={{ marginleft: "6em", paddingleft: "20px", color:"white", fontSize:"30px", fontWeight:"bold", left: "50px"}}>
 											お金稼ぐ。俺は
 											<FontAwesomeIcon icon={faStar} />
-										</h1>
+										</p>
 									</div>
 								</div>
 							</Col>
@@ -208,11 +201,11 @@ const AboutMe = () => {
 
 						<Row
 							style={{
-								backgroundColor: " rgba(255, 249, 244, 0.8)",
+								backgroundColor: "rgba(218, 235, 246, 0.75)",
 								color: "#43566D",
 								
 
-								border: "6px solid #FFF9F4",
+								border: "6px solid #828FB6",
 							}}
 						>
 							<div
@@ -222,30 +215,38 @@ const AboutMe = () => {
 								}}
 							>
 								<h2>Hello Hello Hello!!</h2>
-								<p>
+								<p style={{
+									paddingLeft: "4rem",
+								}}>
 									{" "}
 									Hello! I am an illustrator, a designer, a streamer and now a
 									fullstack engineer. I grew up on a computer so it is only
 									natural that I eventually began to develop software. I got my
-									start on the old bastions of the internet (MySpace and gaia).
+									start on the old bastions of the internet (MySpace and gaia). I make custom themes on these websites, and really made editing html a hobby when tumblr rolled around. 
 									I've made all of the front end mistakes that are physically
 									possible. Like yellow text on a red background. Look at me
-									now! This entire website was coded by hand using bootstrap and
-									vanilla HtML,CSS and Javascript elements. Isn't that neat?{" "}
+									now! This entire website was coded by hand using bootstrap and React!
+									Isn't that neat?{" "}
 								</p>
 							</div>
 
 							{/* Nested Profile Information.*/}
 
 							<Row>
-								<h3>Why SWE</h3>
+								<h3 style={{
+									padding: "2rem",
+								}}>Why SWE</h3>
 								<Row>
-									<p>
+									<p style={{
+									paddingLeft: "4rem",
+								}}>
 										{" "}
 										I want to blend art, the essesnce of the human expirence
 										with technology to reach new heights. I'm driven to innovate
 										user experiences and eager for partnerships that push
-										boundaries and deliver lasting value. Plus someone needs to make the tools look better! Why not me?{" "}
+										boundaries and deliver lasting value. 
+										Also, I'm always on the computer anyway. So, I thought it would be good to challenge myself and learn how to make cool things.
+										{" "}
 									</p>
 								</Row>
 							</Row>
@@ -262,8 +263,12 @@ const AboutMe = () => {
 
 							<Row>
 								<Col>
-									<h3>My career goals</h3>
-									<ul>
+									<h3 style={{
+									padding: "2rem",
+								}}>My career goals</h3>
+									<ul style={{
+									paddingLeft: "4rem",
+								}}>
 										<li>
 											Become a master designer. UXers and SWES will come to me
 											for design decisions.
@@ -284,11 +289,11 @@ const AboutMe = () => {
 						<Row
 							className="WorkHistory"
 							style={{
-								backgroundColor: " rgba(255, 249, 244, 0.8)",
+								backgroundColor: " rgba(218, 235, 246, 0.75)",
 								color: "#43566D",
 								marginTop: "2em",
 								padding: "2rem",
-								border: "6px solid #FFF9F4",
+								border: "6px solid #828FB6",
 								
 							}}
 						>
@@ -298,7 +303,7 @@ const AboutMe = () => {
 									
 									<h3> Resume and Work History</h3>
 										<p> Get a ATS friendly pdf version of my resume here!</p>
-										<Button bsClass="customButton" href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer" style={{maxWidth: "40%"}}>View Resume</Button>
+										<button className="customButton" href="/assets/Pearson Richelle Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</button>
 									</Row>
 									
 								<Row>
@@ -466,10 +471,10 @@ const AboutMe = () => {
 							<div
 								className="education"
 								style={{
-									backgroundColor: " rgba(255, 249, 244, 0.8)",
+									backgroundColor: " rgba(218, 235, 246, 0.75)",
 									color: "#43566D",
 									marginTop: "2em",
-									border: "6px solid #FFF9F4",
+									border: "6px solid #828FB6",
 									padding: "2rem"
 									
 								}}

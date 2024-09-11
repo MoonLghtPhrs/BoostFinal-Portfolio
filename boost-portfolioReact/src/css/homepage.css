@@ -1,7 +1,9 @@
-.homepageContainer {
+Container {
 	width: 100%;
 	height: 100%;
 	/* position: absolute; */
+	background-image: "../assets/UiElBEg.png";
+	background-repeat: repeat;
 }
 
 div.h1 {
@@ -32,7 +34,7 @@ color:#c8b6e7;
 	padding-left: "2em";
 	align-items: center;
 	border-radius: 200px;
-	border: 4.568px solid #9dcae9;
+	border: 4.568px solid #828FB6;
 	background: rgba(218, 235, 246, 0.75);
 }
 
@@ -40,7 +42,7 @@ color:#c8b6e7;
 	width: 250px;
 	height: 250px;
 	border-radius: 25px;
-	border: 5px solid #9dcae9;
+	border: 5px solid #828FB6;
 	background-image: url("../assets/7e96615178509b676023fca7e94ae426.jpg");
 		background-color:  50% / cover;
      background-repeat: no-repeat;
@@ -58,7 +60,7 @@ color:#c8b6e7;
 	width: 500px;
 	align-items: center;
 	border-radius: 50.006px;
-	border: 6.098px solid #9dcae9;
+	border: 6.098px solid #828FB6;
 	background: #3b3e4d;
   position: relative;
     z-index: 1;
@@ -101,8 +103,15 @@ i also want to scale the star a little bit bigger to animate it */
 /* Button Editing */
 
 .homepagebuttons {
-	background-color: #6e529d;
+	background-color: #828FB6;
   margin: 20px;
+  border-radius: 20px;
+  border: 3px solid #828FB6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
 }
 
 

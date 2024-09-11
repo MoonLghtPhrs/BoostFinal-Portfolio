@@ -1,12 +1,16 @@
 import { Button, Container, Col, Row, Image } from 'react-bootstrap'
 import HomepageNonsense from '../Components/ExtraDecorativeNonsense/HomePageNonsense';
-import "../css/homepage.css"
+import tileCover from "../../public/assets/UiELBEg.png";
 import { Link } from 'react-router-dom';
+import "../css/homepage.css"
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 const Home = () => {
     return (
-        <Container fluid style={{  backgroundColor: "#9DC7B6", width: "100%", height: "100%"}}>
+        <Container fluid style={{ backgroundColor: "#9DC7B6", backgroundImage: `url(${tileCover})`, backgroundRepeat: "repeat",  width: "100%", height: "100%" }}>
             <div className='d-flex justify-content-center'>
                 <Row
                 style={{
@@ -33,25 +37,26 @@ margin: "4em",
                           
 						<Row>
 							{" "}
-							<p
-                            style={{"margin":"2em", "paddingLeft":"2em"}}>
+							<p style={{"margin":"2em", "paddingLeft":"2em"}}>
 								{" "}
 								Vai is a full-stack engineer and visual designer that loves
-								video games! I'm a new programmer who loves old web aesthetics
-								and wants to revive personal blogs, colorful profiles and them
-								whimsy of a corpratized internet.
-							</p>{" "}
+								video games! They are new software engineer who loves old web aesthetics
+								and wants to revive personal blogs, colorful profiles and add a little bit of whimsy back into the internet. <FontAwesomeIcon icon={faStar}/>
+							</p> {" "}
 						</Row>
                                         <Row>
                                             <div className="d-flex justify-content-center">
                 
                      <Link to="/coding-projects">
-                                    <Button className='homepagebuttons' size="lg">All Projects </Button>
+                                    <button className='homepagebuttons' size="lg">All Projects </button>
                                 </Link>
 			
                      <Link to="/about">
-                                    <Button className='homepagebuttons' size="lg"> Learn About Me </Button>
+                                    <button className='homepagebuttons' size="lg" variant='custom'> Learn About Me </button>
                                 </Link>
+
+
+                                <button className="homepagebuttons" size="lg"> Contact Me </button>
 		
                     </div>
                    </Row>
