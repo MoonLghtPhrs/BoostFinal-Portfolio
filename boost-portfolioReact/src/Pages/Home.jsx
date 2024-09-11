@@ -1,4 +1,4 @@
-import { Button, Container, Col, Row, Image } from 'react-bootstrap'
+import { Button, Container, Col, Row, Image, Card, CardBody, CardGroup, CardHeader, CardImg, CardTitle, CardText} from 'react-bootstrap'
 import HomepageNonsense from '../Components/ExtraDecorativeNonsense/HomePageNonsense';
 import tileCover from "../../public/assets/UiELBEg.png";
 import { Link } from 'react-router-dom';
@@ -67,15 +67,6 @@ margin: "4em",
 
                 </div>
 
-
-
-        {/* <div className="d-flex justify-content-center">
-            <div className='ContentContainerHomePage'>
-            <h1>Boost Portfolio</h1>
-           <HomepageNonsense/>
-           </div>
-     
-        </div> */}
         </Container>
     )
 }
