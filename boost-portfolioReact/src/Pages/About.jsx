@@ -53,9 +53,9 @@ const AboutMe = () => {
                 <div
                   className="imgContainer"
                   style={{
-                    backgroundImage:
-                      'url("../public/2fab200ee45081b2d3a942cffdcc42bc.jpg")',
-                    backgroundColor: "#9DC7B6",
+                    // backgroundImage:
+                    //   'url("../public/2fab200ee45081b2d3a942cffdcc42bc.jpg")',
+                    backgroundColor: "#828FB6",
                     backgroundRepeat: "no-repeat",
                     backgroundPosition: "auto",
                     minHeight: "350px",
